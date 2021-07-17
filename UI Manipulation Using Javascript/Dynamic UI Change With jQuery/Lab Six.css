@@ -1,0 +1,59 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    
+    width: 50%;
+    background-color: #a59fc4;
+    height: 100%;
+}
+p
+{
+    font-size: x-large;
+}
+#JS
+{
+    position: absolute;
+    left: 0%;
+    width:40%;
+    height: 35%;
+}
+#PHP
+{
+    position: absolute;
+    left:41%;
+    width: 40%;
+    height: 35%;
+}
+#AJAX
+{
+    position: absolute;
+    left: 0%;
+    width:40%;
+    top:50%;
+    height: 35%;
+}
+#jQuery
+{
+    position: absolute;
+    left:41%;
+    width: 40%;
+    top:50%;
+    height: 35%;
+}
+.group 
+{
+    border: 3px outset;
+    border-radius: 25px;  
+    text-indent: 10px;
+    background-color: #a99afd;
+    overflow: hidden;
+   
+}
+.part
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}

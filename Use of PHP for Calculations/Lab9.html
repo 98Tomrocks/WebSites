@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab Nine</title>
+    <link rel="stylesheet" href="Lab9.css" />
+    <script>
+        function validate() {
+            if (!document.getElementById('USAmount').value == "" && Number.parseInt(document.getElementById('USAmount').value)) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("out").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "Lab9.php?q="+Number.parseInt(document.getElementById('USAmount').value), true);
+                xhttp.send();
+            }
+            else {
+                document.getElementById('out').innerText = "No Value Has Been Entered";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>United States Dollar To British Pounds Converter</h1>
+        <form>
+            Amount in United States Dollars:
+            <input type="text" class="Inputs" name="USAmount" id="USAmount"><br><br>
+            <input type="button" name="Submit" onclick="validate()" value="Calculate" id="button">
+        </form>
+        <p id="out"></p>
+    </div>
+</body>
+
+</html>

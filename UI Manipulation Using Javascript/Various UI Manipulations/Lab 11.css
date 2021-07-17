@@ -1,0 +1,90 @@
+
+@media only screen and (min-width:1000px)/*Desktop*/
+{
+	#main
+	{
+		text-align:center;
+		width:1000px;
+		margin:auto;
+		background-color:#D3D3D3;
+		border-radius:10px;
+	}
+	#bod
+	{
+		background-color:#707070;
+
+	}
+	h1
+	{
+		border-right: solid white 2px;
+		border-bottom: solid #989898 2px;
+		border-left: solid white 2px;
+		width: 50%;
+		margin:auto;
+	}
+
+	input
+	{
+		width: 200px;
+
+	}
+	.font
+	{
+		width:500px;
+		font-size:20px;
+	}
+	h3
+	{
+		border-bottom: solid #989898 2px;
+		border-right:solid #989898 2px;
+		border-top: solid white 2px;
+		border-left: solid white 2px;
+		width: 30%;
+		margin:auto;
+		margin-top:20px;
+	}
+}
+@media only screen and (max-width:1000px)
+{
+	#main
+	{
+		text-align:center;
+		margin:auto;
+		background-color:#D3D3D3;
+		border-radius:10px;
+	}
+	#bod
+	{
+		background-color:#707070;
+
+	}
+	h1
+	{
+		border-right: solid white 2px;
+		border-bottom: solid #989898 2px;
+		border-left: solid white 2px;
+		width: 70%;
+		margin:auto;
+	}
+	h3
+	{
+		border-bottom: solid #989898 2px;
+		border-right:solid #989898 2px;
+		border-top: solid white 2px;
+		border-left: solid white 2px;
+		width: 40%;
+		margin:auto;
+		margin-top:20px;
+	}
+}
+#submenu
+{
+	display:none;
+	text-align:left;
+
+}
+
+ul
+{
+	text-align:left;
+}

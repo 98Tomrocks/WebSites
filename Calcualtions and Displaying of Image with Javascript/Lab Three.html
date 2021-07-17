@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab Three - Coins</title>
+        <link rel="stylesheet" href="Lab Three.css">
+        <script src="Lab Three.js"></script>
+    </head>
+    <body>
+        <form id="form">
+            <label>Which Coin?</label><br>
+            <input type="radio" id="quarter" name="Coins" value="quarter">
+            <label for="quarter">Quarter</label><br>
+            <input type="radio" id="dime" name="Coins" value="dime">
+            <label for="dime">Dime</label><br>
+            <input type="radio" id="nickel" name="Coins" value="nickel">
+            <label for="nickel">Nickel</label><br>
+            <input type="radio" id="penny" name="Coins" value="penny">
+            <label for="penny">Penny</label><br><br>
+
+            <label>How Many?</label>
+            <select id="numbers" name="num">
+                <option value="0">Zero</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+                <option value="9">Nine</option>
+                <option value="10">Ten</option>
+            </select>
+            <br>
+            <input type="button" id="btn" onclick="calculate()" value="Click Me">
+            <p>Total Value:</p>
+            <p id="out"></p>
+            
+        </form>
+        
+
+
+    </body>
+
+</html>

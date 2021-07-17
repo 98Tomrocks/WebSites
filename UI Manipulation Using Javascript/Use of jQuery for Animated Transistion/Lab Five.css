@@ -1,0 +1,117 @@
+@media only screen and (min-width:2180px)/*Desktop 4K*/
+{
+    html 
+    {
+        height: 99%;
+    }
+    body {
+        margin: auto;
+        width: 60%;
+        background-color: #736F89;
+        height: 99%;
+    }
+    h1{
+        text-align:center;
+    }
+    h3 
+    {
+        border: 3px outset;
+        border-radius: 25px;  
+        text-indent: 10px;
+        background-color: #a99afd;
+    }
+    .part
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: .1px;
+    }
+    #main {
+        border: 3px outset;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: #a59fc4;
+        height: 100%;
+    }
+    p{
+        font-size: x-large;
+    }
+}
+@media only screen and (min-width:1920px) and (max-width:2000px)/*Desktop 1080p*/
+{
+    html 
+    {
+        height: 99%;
+    }
+    body {
+        margin: auto;
+        width: 60%;
+        background-color: #736F89;
+        
+        height: 99%;
+    }
+    h1{
+        text-align:center;
+    }
+    h3 
+    {
+        border: 3px outset;
+        border-radius: 25px;  
+        text-indent: 10px;
+        background-color: #a99afd;
+    }
+    .part
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: .1px;
+    }
+    #main {
+        border: 3px outset;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: #a59fc4;
+        height: 99%;
+    }
+    p{
+        font-size: x-large;
+    }   
+}
+
+@media only screen and (max-width:1919px)/*Mobile-Res under 1080p*/
+{
+    
+    body {
+       
+        margin: auto;
+        width: 90%;
+        background-color: #736F89;
+        padding-top:20px;
+    }
+    h1{
+        text-align:center;
+    }
+    h3 
+    {
+        border: 3px outset;
+        border-radius: 25px;  
+        text-indent: 10px;
+        background-color: #a99afd;
+    }
+    .part
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: .1px;
+    }
+    #main {
+        border: 3px outset;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: #a59fc4;
+       
+    }
+    p{
+        font-size: x-large;
+    }
+}

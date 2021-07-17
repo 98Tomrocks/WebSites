@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="Lab 11.css">
+    <script>
+        function GetInfo() {
+            if (document.getElementById("cityIn").value != "") {
+                document.getElementById("err").innerHTML = "";
+                document.getElementById("City").innerHTML = "";
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var obj = JSON.parse(this.responseText);
+                        
+                        document.getElementById("City").innerHTML = "City : " + obj.name;
+                        document.getElementById("Temp").innerHTML = "Current Temp : " + Convert(obj.main.temp) + '°F';
+                        document.getElementById("High").innerHTML = "High Temp : "+ Convert(obj.main.temp_max) + '°F';
+                        document.getElementById("Low").innerHTML = "Low Temp : "+ Convert(obj.main.temp_min) + '°F';
+                    }
+                    if(this.status==404)
+                    {
+                        document.getElementById("City").innerHTML="City Not Found! Please Check Spelling.";
+                    }
+                };
+                xhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("cityIn").value + ",us&APPID=00d639b5e05b4fa7915cbb8acc16f589", true);
+                xhttp.send();
+            }
+            else {
+                document.getElementById("err").innerHTML = "*Please Enter The Name Of A United States City";
+            }
+        }
+        function Convert(Temp)
+        {
+            var ReturnValue;
+            ReturnValue=(Temp - 273.15) * 9 / 5 + 32;
+            ReturnValue=ReturnValue.toFixed(2);
+            return ReturnValue;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Weather Information</h1>
+    <h2>Enter The Name Of Any United States City In The Box Below To Get Weather Information</h2>
+    <form>
+        <input type="text" id="cityIn"></br><span id="err"></span></br>
+        <button type="button" onclick="GetInfo()">Get Information</button>
+    </form>
+    <h3 id="City"></h3>
+    <h3 id="Temp"></h3>
+    <h3 id="High"></h3>
+    <h3 id="Low"></h3>
+</body>
+
+</html>

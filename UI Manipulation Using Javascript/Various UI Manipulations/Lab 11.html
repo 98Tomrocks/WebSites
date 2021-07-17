@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="Lab 11.css" />
+</head>
+<body id="bod">
+    <script src="Lab 11.js" ></script>
+    <div id="main">
+        <h1>How to make your site look professional</h1>
+
+        <section id="COLOR">
+            <h3>The Right Colors For The Job</h3>
+            <p>
+                Simply put, different colors convey different emotions and ideas. To have a professional website, you have to pick the right colors. You have to pick the colors that convey the emotions you want the users to feel. A lot of website
+                use the color white and varying shades of gray. This is to convey an air of "clean and crisp". You would use these colors on a website for a business. If they were to use black colors with white text, it would convey very differently.
+                For example, try the button below.
+            </p>
+            <input type="button" value="Invert" onclick="toggleColor('main');">
+            <p>
+                It swapped the background colors and inverted the text colors! But did you notice how it affected the feel of the page? To me, it makes the whole page feel different. The gray seems so simple and inoffensive, and the white text of the inversion feels harsh, distracting, and mildly annoying. The whole page justgets so
+                much brighter that it is easy to see why I picked the first color scheme.
+                That button serves as a demonstration to illustrate the power of colors of a page.
+            </p>
+        </section>
+        <section id="js">
+            <h3>JavaScript and You </h3>
+            <p>
+                Plently of websites today have Javascript built into it to provide new and interesting ways to modify the page. Javascript can do many things, for example that button int the section above only works becasue of Javascript.
+                Another common feature made with javascript is a drop down box be it via hover or by click. Below is an example of a click drop down.
+            </p>
+            <ul>
+                <li onclick="toggleMenu('submenu');"><a href="#">Click Me!</a>
+                    <ul id="submenu">
+                        <li>I am the</li>
+                        <li>drop down!</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                It's simple things like that that will take your website from plain and boring to something a bit more interesting and familiar to the user. This is not to say toss in javascript when you don not need it.
+                If your website does not call for javascript, don't add it anyways.
+            </p>
+        </section>
+        <section id="Accessibility">
+            <h3>Accessibility</h3>
+            <p>
+                One of the most basic things a website is accessibilty. We want people to be able to find and use the website, no matter what. This could mean a number of things, but really it just means making your site versatile. A good example of something you can do pretty easily is a
+                button to increase font size. This allows people with poor vision, say, the elderly, to see the content on your page better. Below are said buttons, completely functional. Give them a try!
+            </p>
+            <input class="font" id="Big" type="button" value="Having trouble reading? Click Here!" onclick="document.getElementById('main').style.fontSize = '20px';">
+            <input class= "font" type="button" value="Back to Normal" onclick="document.getElementById('main').style.fontSize = '16px';">
+        </section>
+
+        
+         <footer>
+            Link To Portfolio:<a href="portfolio.html">Portfolio</a>
+        </footer>
+    </div>
+    
+</body>
+</html>

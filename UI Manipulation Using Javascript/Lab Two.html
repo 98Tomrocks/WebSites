@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lab Two</title>
+        <link rel="stylesheet" href="Lab Two.css" />
+    </head>
+
+    <body>
+        <script src="Lab Two.js" ></script>
+        <div id="main">
+            <h1>Scripting on Websites</h1>
+            <div id="navBar">
+                <ul id="navList">
+                    <li onclick="TabSwap('JavaScript','JS');"><a href="#" class="listELE" id="JS">JavaScript</a></li>
+                    <li onclick="TabSwap('PHP', 'PHP-LS');"><a href="#" class="listELE" id="PHP-LS">PHP</a></li>
+                    <li onclick="TabSwap('AJAX', 'AJAX-LS');"><a href="#" class="listELE" id="AJAX-LS">AJAX</a></li>
+                </ul>
+            </div>
+            <div id="JavaScript" class="MainBodPart">
+                <h2>JavaScript</h2>
+                <p>
+                    JavaScript is a programming language used on websites. Using JavaScript allows the web page to update the page, change the page, and react
+                to feedback from the user. These are things that cannot be done with just HTML or CSS, and thus makes JavaScript very useful when creating
+                a website. Java can also calculate, manipulate, and validate data, which means it can handle input from the user and then react to the input.
+                Lastly, since javascript can manipulate the page with out having to refresh the browser, it can be used when animating a web page with interesting
+                movements and changes.
+                </p>
+                <p>Links:</p>
+                <ul>
+                    <li><a href="https://skillcrush.com/blog/javascript/">Skill Crush</a></li>
+                    <li><a href="https://www.w3schools.com/whatis/whatis_js.asp">W3 Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla</a></li>
+                </ul>
+            </div>
+            
+            <div id="PHP" class="MainBodPart">
+                <h2>PHP</h2>
+                <p>
+                    PHP(Stands For PHP: Hypertext Processor) is a scripting language that is well suited for web development, and be embedded into HTML. 
+                PHP code is executed server-side, and send the resulting HTML to the client on the other end. This not only makes it easier on the client's
+                computer but also hides the code away from the client, makign it so they never know how you did something or what you can do. PHP is also integrated
+                with many databases, such as MySQL, PostgreSQl, and more. It's ability to run server-side and manipulate data makes it very useful in today's web climate.
+                </p>
+                <p>Links:</p>
+                <ul>
+                    <li><a href="https://www.tutorialspoint.com/php/index.htm">TutorialsPoint</a></li>
+                    <li><a href="https://www.w3schools.com/php/php_intro.asp">W3 Schools</a></li>
+                    <li><a href="https://www.php.net/manual/en/intro-whatis.php">The PHP Website</a></li>
+                </ul>
+            </div>
+            
+            <div id="AJAX" class="MainBodPart">
+                <h2>AJAX</h2>
+                <p>
+                    Unlike the other listed on this page, AJAX(Asynchronous JavaScript And XML) is not a programming language. AJAX is a technique for accessing
+                a web server from a web page. Being Asynchronous, it does not need to refresh the page in order to change it's content. Most current web 
+                pages would have to refresh in order to contact the server. Using AJAX, it would not have to. For example, when filling out a form online, you would
+                have to press submit, and then the page refreshs, having sent the data to the server and putting you on a different page.
+                With AJAX, it could contact the server with the information without having to refresh, just updating soem part of the screen or redirecting you 
+                to a different page. Lastly, AJAX can use many formats to communicate with the server, including JSON, HTML, XML, and text files.
+                </p>
+                <p>Links:</p>
+                <ul>
+                    <li><a href="https://www.tutorialspoint.com/ajax/index.htm">TutorialsPoint</a></li>
+                    <li><a href="https://www.w3schools.com/xml/ajax_intro.asp">W3 Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started">Mozilla</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </body>
+</html>

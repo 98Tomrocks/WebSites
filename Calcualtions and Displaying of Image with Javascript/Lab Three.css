@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1080px)
+{
+    body
+    {
+        margin: auto;
+        width: 50%;
+        background-color: #d7d2f3;
+        height: 100%;
+    }
+    #form
+    {
+        border-left: 3px outset;
+        border-right: 3px outset;
+        padding: 10px;
+        background-color: #ffffff;
+        text-align: center;
+        height: 100%;
+        font-size: 30px;
+    }
+    html
+    {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:1919px)/*Mobile-Res under 1080p*/
+{
+    body
+    {
+        margin: auto;
+        width: 90%;
+        background-color: #d7d2f3;
+        height: 100%;
+    }
+    #form
+    {
+        border-left: 3px outset;
+        border-right: 3px outset;
+        padding: 10px;
+        background-color: #ffffff;
+        text-align: center;
+        height: 100%;
+        font-size: 40px;
+    }
+    html
+    {
+        height: 100%;
+    }
+    #numbers
+    {
+        height: 40px;
+    }
+    #btn
+    {
+        height: 40px;
+    }
+}
